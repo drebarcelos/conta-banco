@@ -1,9 +1,8 @@
 package br.com.conta.banco;
 
-public class Teste {
+public class Aplicacao {
 
 	public static void main(String[] args) {
-		System.out.println("Olá Mundo!");
+		new Banco().iniciar();
 	}
-
 }
