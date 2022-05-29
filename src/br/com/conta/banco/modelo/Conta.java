@@ -6,7 +6,7 @@ import java.util.Objects;
  * Classe que representa a moldura de uma conta
  * @author Andressa Barcelos
  */
-public class Conta {
+public abstract class Conta {
 	private double saldo;
 	private int agencia;
 	private int numero;
