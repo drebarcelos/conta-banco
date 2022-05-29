@@ -4,10 +4,18 @@ import java.util.Scanner;
 
 public class Banco {
 	private static final Scanner SCANNER = new Scanner(System.in);
+	private static final int OPCAO_INICIAL = 1;
+	private static final int OPCAO_SAIR = 0;
 	
 	public void iniciar() {
-		imprimeMenu();
-		int opcao = getOpcaoDigitada();
+		int opcao = OPCAO_INICIAL;
+		
+		while(opcao != OPCAO_SAIR) {
+			imprimeMenu();
+			opcao = getOpcaoDigitada();
+			SCANNER.nextLine();
+			executaOpcaoEscolhida(opcao);
+		}
 	}
 	
 	private void imprimeMenu() {
@@ -21,5 +29,18 @@ public class Banco {
 	
 	private int getOpcaoDigitada() {
 		return SCANNER.nextInt();
+	}
+	
+	private void executaOpcaoEscolhida(int opcao) {
+		switch(opcao) {
+			case 0:
+				sair();
+				break;
+		}
+	}
+	
+	private void sair() {
+		System.out.println("Programa finalizado com sucesso!");
+		System.exit(OPCAO_SAIR);
 	}
 }
