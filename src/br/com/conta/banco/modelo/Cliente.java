@@ -1,18 +1,10 @@
 package br.com.conta.banco.modelo;
 
-/**
- * Classe que representa a moldura de um cliente
- * @author Andressa Barcelos
- */
+
 public class Cliente {
 	private String nome;
 	private String cpf;
 	
-	/**
-	 * Construtor para inicializar o objeto Cliente a partir dos atributos nome e cpf;
-	 * @param nome
-	 * @param cpf
-	 */
 	public Cliente(String nome, String cpf) {
 		this.nome = nome;
 		this.cpf = cpf;

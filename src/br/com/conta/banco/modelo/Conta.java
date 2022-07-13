@@ -2,21 +2,12 @@ package br.com.conta.banco.modelo;
 
 import java.util.Objects;
 
-/**
- * Classe que representa a moldura de uma conta
- * @author Andressa Barcelos
- */
 public abstract class Conta {
 	private double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
-	
-	/**
-	 * Construtor para inicializar o objeto Conta a partir da agencia e numero;
-	 * @param agencia
-	 * @param numero
-	 */
+
 	public Conta(int agencia, int numero, Cliente titular) {
 		this.agencia = agencia;
 		this.numero = numero;
